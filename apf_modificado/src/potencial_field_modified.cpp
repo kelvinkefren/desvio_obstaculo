@@ -47,7 +47,7 @@ geometry_msgs::msg::Wrench calculateResultantForce(
 
     // Força atrativa (usando seu próprio modelo)
     Vector2f Fatt(0, 0);
-    Fatt = modified_attractive_force(...);
+    Fatt = epsilon * dg * Nog;
 
     // Força repulsiva (inicializando)
     Vector2f Frep(0, 0);
